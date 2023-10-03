@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=EB+Garamond:ital@1&family=Pacifico&family=Pinyon+Script&display=swap');
+body{font-family: 'Pacifico', cursive;
+    font-family: 'Pinyon Script', cursive; 
+    font-family: 'Black Ops One', cursive;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Kaushan Script', cursive;
+
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+:root{
+    --main-color:rgb(8, 117, 8);
+}
+html{
+     scroll-behavior: smooth;
+     font-size: 20px;
+    /*1rem=20px*/
+}
+.continer{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width:768px) {
+    .continer{
+        width: 750px;
+    }
+    
+}
+@media (min-width:992px) {
+    .continer{
+        width: 970px;
+    }
+    
+}
+@media (min-width:1200px) {
+    .continer{
+        width: 1170px;
+    }
+    
+}
+/*start nav*/
+nav{
+    background-color: rgb(255, 255, 255);
+padding: 20px 0;
+}
+
+nav img{
+  
+    width: 70px;
+}
+
+.nav-content{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list img{
+width: 30px;
+}/*end nav*/
+
+
+
+/*start header*/
+
+header{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+header .con-header{  
+display: flex;
+flex-flow:wrap row ;
+justify-content: space-around;
+align-items: center;
+}
+
+header .con-header .image img{
+    width: 100%;
+
+}
+header .con-header div{
+    
+width: calc(100% / 2);
+}
+
+.con-header .text{
+  padding: 20px;
+
+}
+
+.con-header .text h1{
+    color: var(--main-color);
+   font-size: 2rem;
+margin-bottom: 20px;
+   font-weight: 800;
+}
+.con-header .text button{
+   padding: 10px 30px;
+   margin-left: 20px;
+   font-size: 20px;
+   border: none;
+   border-radius: 5px;
+ 
+}
+.con-header .one{
+    color: #ffffff;
+    background-color:var(--main-color);
+ box-shadow: 1px 1px 1px rgb(17, 17, 17);
+ 
+}
+.con-header .two{color: #000000;
+    background-color: rgb(192, 188, 188);
+
+ box-shadow: 1px 1px 1px rgb(11, 12, 12);
+}
+
+
+@media (max-width:992px) {
+    .con-header .text button{
+        padding: 10px 20px;
+        margin: 15px;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+      
+     }
+
+    header .con-header{ 
+        flex-flow:wrap column;
+  
+        }
+    header .con-header div{
+           text-align: center;
+            width:100%;
+      }
+      .con-header .text{
+        padding: 20px;
+      
+      }
+      .con-header .text h1{
+         font-size: 1.5rem;
+    
+      }
+}
+/*end header*/
+
+
+
+
+/*start img*/
+.change{
+    margin: 0px 15px;
+   width: calc(100% - 30px);
+    background-color: rgb(192, 188, 188);
+   padding-top: 60px;
+   padding-bottom: 60px;
+}
+.imag{position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    
+
+}
+.imag img{
+width: 60%;
+
+}
+.change .imag::after{
+    z-index: -1;
+    content: "";
+    width: 130px;
+    height: 575px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -40px;
+   left: 340px;
+}
+.change .imag::before{
+    z-index: 5;
+    content: "";
+    width:135px;
+    height: 135px;
+    border-radius:50% ;
+    background-color: rgb(84, 221, 159);
+    position: absolute;
+    top: -45px;
+   left: 170px;
+}
+
+
+@media (max-width:1200px) {
+    .change .imag::after{
+        width: 100px;
+        height: 490px;
+        position: absolute;
+        bottom: -45px;
+       left: 270px;
+    }
+    .change .imag::before{
+        width:130px;
+        height: 130px;
+        position: absolute;
+        top: -45px;
+       left: 110px;
+    }
+    
+}
+
+@media (max-width:992px) {
+    .change .imag::after{
+        width: 80px;
+        height: 400px;
+        position: absolute;
+        bottom: -45px;
+       left: 240px;
+    }
+    .change .imag::before{
+        width:100px;
+        height: 100px;
+        position: absolute;
+        top: -45px;
+       left: 110px;
+    }
+    
+
+}
+@media (max-width:768px) {
+    .change .imag::after{
+        display: none;
+    }
+    .change .imag::before{
+        display: none;
+       
+    }
+}
+/*end img*/
+
+
+
+/*start person*/
+.person{
+    padding: 60px 0;
+}
+
+.person .al{
+    text-align: center;
+    font-size: 60px;
+    color: var(--main-color);
+}
+.person .al+p{
+    text-align: center;
+    padding:0 100px;
+    line-height: 1.8;   
+}
+
+.person .person-con{
+    margin-top: 40px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+.person-con div img{
+width: 130px;
+height: 130px;
+border-radius:50% ;
+border: 4px solid #ffffff;
+}
+.person-con div{
+    padding: 5px;
+    background-color: rgb(192, 188, 188);
+    text-align: center;
+    box-shadow: 1px 1px 3px gray;
+}
+.person-con div p{
+margin: 20px 0;
+line-height: 1.4;
+}
+.person-con div h1{
+    font-size: 30px;
+   margin-bottom:10px ;
+}
+@media (max-width:768px) {
+ 
+    .person .al{
+        text-align: center;
+        font-size: 30px;
+        color: var(--main-color);
+    }
+    .person .al+p{
+        text-align: center;
+        padding:0 10px;
+        line-height: 1.8;   
+    } 
+}
+/*end person*/
+
+/*start product*/
+.product{
+    padding: 60px 0;
+}
+.product .pro-content{
+    display: flex;
+    flex-flow:row wrap ;
+    justify-content: space-evenly;
+
+}
+.pro-content .image img{
+width: 380px;
+}
+.pro-content .image {
+    position: relative;
+}
+.pro-content .image::after{
+width:40px;
+height: 60%;
+content: "";
+position: absolute;
+left: -30px;
+top: 10px;
+background-color: var(--main-color);
+}
+.pro-content .text{position: relative;
+    border-radius: 8px;
+   padding:0 25px;
+    width: 360px;
+    background-color: rgb(192, 188, 188);
+}
+.pro-content .text h1{
+font-size: 40px;
+color: var(--main-color);
+margin: 40px 0 40px;
+
+
+}
+.pro-content .text button{
+background-color: rgb(28, 93, 28);
+color: #fff;
+margin: 15px 0;
+padding: 12px 22px;
+border-radius: 8px;
+border: none;
+font-size: 25px;
+}
+.pro-content .text::after{
+    width:40px;
+    height: 60%;
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 10px;
+    background-color: var(--main-color);
+    }
+ @media (max-width:500px){
+    .pro-content .text::after{
+        display: none;
+    }
+    .pro-content .image::after{
+        display: none;
+    }
+    .pro-content .image img{
+        width: 300px;
+        }
+    .pro-content .text h1{
+
+        font-size: 34px;
+        }
+    .pro-content .text button{
+
+        font-size: 20px;
+        }
+ }/*end product*/
+
+    
+/*start form*/
+.form{  margin: 0px 15px 15px;
+    width: calc(100% - 30px);
+  
+    background-color: rgb(192, 188, 188);
+   padding-top: 60px;
+   padding-bottom: 40px;
+  
+
+}
+.form .continer{
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.form .continer>p{
+    font-size: 60px;
+    text-align: center;
+    color: var(--main-color);
+}
+.form .continer form{
+    background-color: #fff;
+    display: inline-block;
+    padding: 20px;
+    width: 70%;
+  
+   
+  
+    
+}
+.form .continer form div{
+    text-align: center;
+    margin: 10px 0;
+}
+.form .continer form div input:not(input[type=submit]){
+width: 90%;
+padding: 10px 20px;
+background-color: rgb(192, 188, 188);
+border: none;
+border-radius: 10px;
+}
+.form .continer form div textarea{
+    background-color: rgb(192, 188, 188);
+    width: 90%;
+    height: 15vh;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+
+}
+.form .continer form .gg div:last-child input{
+   padding: 9px 60px;
+   font-size: 15px;
+   color: #fff;
+   background-color: var(--main-color);
+   border: none;
+   border-radius: 10px;
+}
+
+@media (max-width:768px) {
+    .form .continer form{
+       
+        
+        padding: 10px;
+        width: 100%;
+    }
+    .form .continer>p{
+        font-size:35px;
+    }
+    .form .continer form .gg div:last-child input{
+        padding: 5px 40px;
+       
+     }
+     .form .continer form div input:not(input[type=submit]){
+        width: 95%;
+        padding: 12px;
+       
+        }
+        .form .continer form div textarea{
+            background-color: rgb(192, 188, 188);
+            width: 95%;
+            height: 12vh;
+            padding: 12px;
+
+        }
+}
+/*end form*/
+
